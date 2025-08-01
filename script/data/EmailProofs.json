@@ -1,0 +1,32 @@
+{
+  "alexgray.bcn.esp@gmail.com": {
+    "domainName": "gmail.com",
+    "publicKeyHash": "0x954fe49f513df570cfae5648a161bea3b81ed67ce88199f802a0bfafa4899b95",
+    "timestamp": 1752228781,
+    "maskedCommand": "Accept guardian request for 0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f",
+    "emailNullifier": "0x237c2b498040692c5ded4a01154fcb55d2e1a811d88ca54b5da5fc511772a454",
+    "accountSalt": "0x1ab3cb330654aa16ba9e40bcbbbaf1ebe6fd6a7e70faea043726686d1d64c0bb",
+    "isCodeExist": true,
+    "proof": "0x"
+  },
+  "alex@openfort.xyz": {
+    "domainName": "openfort.xyz",
+    "publicKeyHash": "0xb48c88dc39a6a0a41bb967b886f1489c0ffea1939bc8844d2ff7aca9274de9a0",
+    "timestamp": 1751982173,
+    "maskedCommand": "Accept guardian request for 0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f",
+    "emailNullifier": "0x93a9f9772bce9106fa92327d513b1cbe239a8a1b2e511766f8221af6283bb080",
+    "accountSalt": "0x427d9458e6e2abb95b5c35000dd1f4b090dafa37df218fbdcca08847e4655e4f",
+    "isCodeExist": true,
+    "proof": "0x"
+  },
+  "jaume@openfort.xyz": {
+    "domainName": "openfort.xyz",
+    "publicKeyHash": "0xb48c88dc39a6a0a41bb967b886f1489c0ffea1939bc8844d2ff7aca9274de9a0",
+    "timestamp": 1751982220,
+    "maskedCommand": "Accept guardian request for 0x5615deb798bb3e4dfa0139dfa1b3d433cc23b72f",
+    "emailNullifier": "0x03de5b9bb06392af3cd86d2fdb4e58583ebf075bdbd1e2b5fe184d15cc98d878",
+    "accountSalt": "0x6685a91d661243d50a7aa4a93592322230fb76a0ee8f71637c3597444e23b7ca",
+    "isCodeExist": true,
+    "proof": "0x"
+  }
+}

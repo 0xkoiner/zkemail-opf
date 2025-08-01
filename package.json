@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@zk-email/helpers": "^6.4.2",
+    "@zk-email/sdk": "^1.0.3",
+    "axios": "^1.11.0",
+    "circomlibjs": "^0.1.7",
+    "dotenv": "^16.4.5",
+    "mailparser": "^3.7.4",
+    "viem": "^2.33.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/circomlibjs": "^0.1.6",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.0",
+    "tsx": "^4.19.2"
+  }
+}

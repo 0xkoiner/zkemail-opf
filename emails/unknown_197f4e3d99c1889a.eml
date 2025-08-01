@@ -1,0 +1,124 @@
+Delivered-To: nekotattoosbcn@gmail.com
+Received: by 2002:a05:6a11:d493:b0:5f1:206d:750d with SMTP id oa19csp9213383pxc;
+        Thu, 10 Jul 2025 08:11:02 -0700 (PDT)
+X-Received: by 2002:a05:6870:bb0d:b0:2ee:2800:8592 with SMTP id 586e51a60fabf-2ff0b8c66f2mr2923519fac.23.1752160262188;
+        Thu, 10 Jul 2025 08:11:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1752160262; cv=none;
+        d=google.com; s=arc-20240605;
+        b=EyHqH24kNq/3/wOo71XxGvBGUAsciN60aOPu1iOC8uqU6/kPR5HJ+RDP+zSN6mVbCJ
+         CL9fQEButPLqNtBk7iUaD9EWEhJcl4DQ8oZYvKQYglJIOMdFpS/oMy7avT8QF6w9sds4
+         yXnE280XeEZIzIIyA0SQie/t55bx9Ps3axF2miw2XYpZwRFi+0E4CEi0Xajmpgn7BjIQ
+         u9kHC+gbyouWszrodx6QWS0LhagqRflrBUwL3PeOBeRsm9AOD4l2xME36pu/dbPOFbS+
+         4+uhMsv7uuKk4BH2mr2yECH8Vipj23zNp/3LeDO6SC4/ftWBEeNcZowoH3Gn/VRrWbf1
+         WC4A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=CqX8Eic33rOibBW/1TGKzSlOLRVf2mhumUE51RS5+pM=;
+        fh=I3nZFjVf8BqC2wgG2KNfBy5KflFdo6VhgfKVxv8Hj9Q=;
+        b=Efh+uswr33Ur4TBIcjQS0PJpHHtMz2i+8ohIg7h7ntSNpq3kIlk9iaa6XtnrhZ2MTy
+         oDO1ataIqAK72Lju2iarR6/hHEFzTlTmkBzSHwsDOpYNkF/jR/8JC5jrDOY8tEpnYkI7
+         T6bO7txMK5THa82XiMDRgY+W+nCPEhzFMkdhxRa96CTDX5V9Ga5nl6BvEglmrF/aj7fk
+         uwDPN6KYrFpGq3UMx8QNYQc8IOO5yt3gBqi4Vu6ShrGos+0r81o5dh+tzt39wQvcTR31
+         OHeAGDvFWmW23+arFIEiofLntwRW9/bh1v2XUK9319w6bFvQXvtlRLm5onh/fROG7Yec
+         hZ2A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=diUes0kE;
+       spf=pass (google.com: domain of alexgray.bcn.esp@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=alexgray.bcn.esp@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <alexgray.bcn.esp@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 586e51a60fabf-2ff116b819bsor328870fac.16.2025.07.10.08.11.02
+        for <nekotattoosbcn@gmail.com>
+        (Google Transport Security);
+        Thu, 10 Jul 2025 08:11:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alexgray.bcn.esp@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=diUes0kE;
+       spf=pass (google.com: domain of alexgray.bcn.esp@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=alexgray.bcn.esp@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1752160262; x=1752765062; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=CqX8Eic33rOibBW/1TGKzSlOLRVf2mhumUE51RS5+pM=;
+        b=diUes0kEPn8qU/grH2abFsQ0Owj1Cc7CuZrUU4WVdjV8ws2gBN+KOYrvHYJBfDJt4p
+         J96/qkRsEL+yh6VL8Y6SRYocRK4RYH2tRotVG0NliGuXwiVlwMNbOnRq7nSeLS5S1XiC
+         QLUpFeBHm7nH3a+n/L73zbGv08+g1bWyAGvP60wU/VviUqHMg9UV+bKPk6yl7R0muJnP
+         w47fYTJ5e/2eH59W3UIssceGWaF6DXKb0iFlKvbCgZj4rAHWem1A3x4uluvrQJPAFVvY
+         EQ57nwa3I1p/1chXb55CC9pEApez0+vcbJHNNdXpGzifRVtjNUk8r21DHgOtRR002+MR
+         g9/g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1752160262; x=1752765062;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=CqX8Eic33rOibBW/1TGKzSlOLRVf2mhumUE51RS5+pM=;
+        b=v2RQq9qHd94+LrkBKIQxE40fTSuBlqYXLwU8oh3M/pRsr6UXl2zCDzFb6rsnK04jy/
+         5ZNRrX43JKVOJltKOtlvOKoarhH4r6/9vDK7SuBp0bXrD+9ccRUD8JdUEQKqxH5keUON
+         xGjO/crcxw2WVZqZN4SWSuIW0BnpFGWWTYb5WifC4TbYE09K1kJfFUKjGlj9y/WvgNVC
+         YHLYJIdn3XA01I8375P1wVESFr1I2y9Xhh9vGCAXz9/PxKHaO/wMi2H78WR3BdxwwmZd
+         ghveLqh0M+E9m11RGi9ionkGfCFC+9ntryYexhnPIKTx+N2JfL2nWsyka7BwDnIw5r12
+         17Jw==
+X-Gm-Message-State: AOJu0Ywn6NmDsOO/8nUzHjA0g6hOmjTI7ZXjyzWENLOinV8mGAGSKKxz
+	tjufHtDuNlIscd6WDnKcSETc7vo8hQJpUZu1ORtLZu+h8qIxINR0ogesWve1s4NLmXEhhidzX+D
+	jUP6kF79sVGHr4Zevjlvq2BGq5fCcUEv8V3q2
+X-Gm-Gg: ASbGncsC1bLjK6L9KPOwEmaHpBCVt+8AMBR7z/NuianbQX0XmDzztO6wclMlAuQ83to
+	jIjdKcPX7HtqlCoWfnoPmKzxb2ZoeAZQUh09vtKCMEjoD3bWmqjvl3MQweGSotAkEJlGk3LXx3a
+	EdBUfIe+Hs9gWdPM20NMIJxC9ARBhVSw2LYi1eeftrVw==
+X-Google-Smtp-Source: AGHT+IE8u6P/h8PNgzauiQpFtpZn1KHQ3Z6nS6MNsWZMX9WifhZmfzcVE+YMSjeFQAmffxrLT44dSnSPqxBCnHqOMGg=
+X-Received: by 2002:a05:6870:4694:b0:2cc:3530:d313 with SMTP id
+ 586e51a60fabf-2ff0b8d014amr2773957fac.25.1752160261712; Thu, 10 Jul 2025
+ 08:11:01 -0700 (PDT)
+MIME-Version: 1.0
+References: <66864ec0-6358-629f-3d23-3a81cc8e150b@gmail.com>
+In-Reply-To: <66864ec0-6358-629f-3d23-3a81cc8e150b@gmail.com>
+From: Alex Gray <alexgray.bcn.esp@gmail.com>
+Date: Thu, 10 Jul 2025 17:10:49 +0200
+X-Gm-Features: Ac12FXx088Dhisyd_wRk9InFm812ivXigath5sAFGzlZ18Z8Hvh2QW7MUYBDdbw
+Message-ID: <CACoeYSOHfY4ckFGTcyP0w+=NQ=OTO0pAnDCb1H19trbqUkvR+w@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IPCfm6HvuI8gR3VhcmRpYW4gaW52aXRhdGlvbiBmb3Igd2FsbGV0IDB4NTYxNWRFQg==?=
+	=?UTF-8?B?N+KApg==?=
+To: =?UTF-8?Q?ZK=E2=80=91Email_Recovery?= <nekotattoosbcn@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000fd2f1b0639949927"
+
+--000000000000fd2f1b0639949927
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Confirm
+
+On Thu, Jul 10, 2025 at 5:10=E2=80=AFPM ZK=E2=80=91Email Recovery <nekotatt=
+oosbcn@gmail.com>
+wrote:
+
+> Accept guardian request for 0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+>
+> Instructions:
+> Reply 'Confirm' to this email to accept the request. Your request
+>
+> Guardian EmailAuth address: 0xAd7A5F378eb92435B9Ce18ddCC0cA5ebC396af21
+>
+
+--000000000000fd2f1b0639949927
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Confirm</div><br><div class=3D"gmail_quote gmail_quote_con=
+tainer"><div dir=3D"ltr" class=3D"gmail_attr">On Thu, Jul 10, 2025 at 5:10=
+=E2=80=AFPM ZK=E2=80=91Email Recovery &lt;<a href=3D"mailto:nekotattoosbcn@=
+gmail.com">nekotattoosbcn@gmail.com</a>&gt; wrote:<br></div><blockquote cla=
+ss=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid =
+rgb(204,204,204);padding-left:1ex">Accept guardian request for 0x5615dEB798=
+BB3E4dFa0139dFa1b3D433Cc23b72f<br>
+<br>
+Instructions:<br>
+Reply &#39;Confirm&#39; to this email to accept the request. Your request<b=
+r>
+<br>
+Guardian EmailAuth address: 0xAd7A5F378eb92435B9Ce18ddCC0cA5ebC396af21<br>
+</blockquote></div>
+
+--000000000000fd2f1b0639949927--

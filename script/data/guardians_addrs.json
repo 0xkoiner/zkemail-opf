@@ -1,0 +1,20 @@
+{
+  "guardian_0": {
+    "email": "alexgray.bcn.esp@gmail.com",
+    "accountCode": "0x2d3e58b3af3dc9294af5d926336f5d51608c82a102ae7ed9de478c03fa48bbf7",
+    "salt": "0x239e50ba824edf6a9038a9e0a0a89ec653c2c4d73dd23c6ff3b3cd848b8e891d",
+    "address": "0xFd48Ed7b88C81C188511c1a299B6231E388deE64"
+  },
+  "guardian_1": {
+    "email": "alex@openfort.xyz",
+    "accountCode": "0x0bfda705c7dace3b936ee77b92ffd79625ad1697dcacfe5265d91d52b2233a2c",
+    "salt": "0x1d3271fd5b7ea833c4ebeddc29ee7fccc2d37619d6ce60ac292ea9f91b302838",
+    "address": "0x6a2fEF56848Ae636514A3468a37E64e2e0621985"
+  },
+  "guardian_2": {
+    "email": "jaume@openfort.xyz",
+    "accountCode": "0x08de166fa95a2b550b5792e788b74118bf2f6d4fad7981f3504a03d49be41725",
+    "salt": "0x2cf53dbace142d7e1efc635fb5e840f42150d900c69730594069907940f5248f",
+    "address": "0xE2c4044d39Bf62579a4d930D7Fe6bA2804eF77bd"
+  }
+}

@@ -1,0 +1,144 @@
+Delivered-To: nekotattoosbcn@gmail.com
+Received: by 2002:a05:6a11:d493:b0:5f1:206d:750d with SMTP id oa19csp7745313pxc;
+        Tue, 8 Jul 2025 06:42:54 -0700 (PDT)
+X-Received: by 2002:a05:651c:20da:20b0:32c:de97:6ff7 with SMTP id 38308e7fff4ca-32f39b34d66mr7608521fa.29.1751982173960;
+        Tue, 08 Jul 2025 06:42:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1751982173; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Nyv3Kdomune/7VEs1NjvHEDh9DXnYlZ/UhtMEDqBpLjeK/nQH7AJfRypntH+2g+DD1
+         u3oSLZATj8J7cU4q/+Vns8Ot+Qfm6A9TUwdY0pWljWjsfi8wptXJgcwEL7JmAwIbDNSe
+         YaMa/NM1WmVePkQ//0PurUYDBqJyqe8SC1QTjQIWLqsOD+e79Pg8v2PGslZnBylP93Av
+         vy9I8tZdL5kfzlNzVdpPqnHqmQ9KAYU+TAnMoF0xKK2RHfOxCPTYEsmreBIK5aZa/HOQ
+         EvXaCEG7W1TbOoki5bEFm8oE3OBE8wtBduGlR+UkkgJpWGPP2suLPWQa5kEsyjp0XL88
+         c+JQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=gJWVvL0uv1oj0xWUrWYMebxqIlbikw55mODzGb9aokc=;
+        fh=I3nZFjVf8BqC2wgG2KNfBy5KflFdo6VhgfKVxv8Hj9Q=;
+        b=Ym6xbG06VkPGphBF/p79vJdmVwJdLSSdVMPpstdXiglZ2XlHPltRI9NOkYyFJNeM23
+         SYrCMzJibZL2vF2albr8aMV4P8+qbem8m5rMZ1esJ9FB7UGsMGKlg59rtTa9ZsPOD95F
+         P7OvgT16et++gl3mtKE7xDRtcIgCdAMnsJC3VwYaWdNl2MazXuUNsayj/xnVP5HSttUO
+         ZVtMtahGlESrERMWugrOmpHxiq3h1Fv9qJb+TpfSW7Q8pGk1UipZQZ5sFkhnbhBOfCYU
+         owaxvXwsfDzvwyKSSpzhu2kTYnaGU1VInDQN6Jlr5yRF7a2XkeJGSqPfrHxcbrtuM0vq
+         ZYKw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@openfort.xyz header.s=google header.b=C3trvsd8;
+       spf=pass (google.com: domain of alex@openfort.xyz designates 209.85.220.41 as permitted sender) smtp.mailfrom=alex@openfort.xyz;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=openfort.xyz;
+       dara=pass header.i=@gmail.com
+Return-Path: <alex@openfort.xyz>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 38308e7fff4ca-32e1afa34adsor12569861fa.1.2025.07.08.06.42.53
+        for <nekotattoosbcn@gmail.com>
+        (Google Transport Security);
+        Tue, 08 Jul 2025 06:42:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alex@openfort.xyz designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@openfort.xyz header.s=google header.b=C3trvsd8;
+       spf=pass (google.com: domain of alex@openfort.xyz designates 209.85.220.41 as permitted sender) smtp.mailfrom=alex@openfort.xyz;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=openfort.xyz;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=openfort.xyz; s=google; t=1751982173; x=1752586973; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=gJWVvL0uv1oj0xWUrWYMebxqIlbikw55mODzGb9aokc=;
+        b=C3trvsd89lXecg77gwCn/8JsDXEHQ9o7o2djrER0NpwOvHzaFgDtGk0Ag+dHqjcQMY
+         YAkLp57H455JWYlIRzL5k1zz4e2mQ77rlrkF/t8mfqG6lFwNy1QfOIOsgDUREB8b3x0h
+         yXAnfEzisy5N/XpHKmbGH+xhcIy48Veyq8giNajzkvLgBAf/55CacCrX/DglOsegNKIq
+         CewMtgTGJx1AeChvgWfruzqc3Tu0E3c9+7VsmT+xT9Z/XJ91uL0klvU1H3vKppOh3NEZ
+         MwVZzFkm/U4BLIsg+f0IlcZE3RzVifwzh5wVfZSypMrhwBCTg01DSLZfXPBIRYutFFyF
+         h5hQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1751982173; x=1752586973;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=gJWVvL0uv1oj0xWUrWYMebxqIlbikw55mODzGb9aokc=;
+        b=D1TRzi4p7Z6vqr+9j0WCASj4kwnVqMlH37tEB4mLsfct6SD5Vb0tlkpGLhhkXS8gXu
+         DXEUQfHY9MYW6/aa6EP9ZhLtkhvXzKLxJes0fcZ+vF8c0nclEC8fLMOrN6TC3qkttEDL
+         RqD91ZXA2jOCzCehqBifJ76yi7V3/n1IvfAckb2pHcJFN4duOqo9tTOUQ+rKMV88SNBa
+         gjFUc4I8bChYA+/0ZJ1BgxS9gaKL9BfIj1izoIunbXnbmhwQgFqlziZOcGy+9wZ+CcIP
+         slWXSmUrtUYu6TCrdCOA3O7RgpxOyNMWrWgwRFo2bIOIg8DAq5bB2gHIUMwqK/eEl1Il
+         AtnA==
+X-Gm-Message-State: AOJu0YxmAFaMInXNMRtvQcPSvJq2xStiH8sNP3v2lQmDH1ZJY2ChwgWI
+	RIsGAfJLV/Id3ivrusjW3t/AW0S6IMjTryvQPHXy91z6nWHkGqWwY1MJ8sWss/tqKz/uA/6tDIf
+	n2qsjCcSUTARF9o9H6D1pbiiZMNEF85OATXiWHjQTJcAzB9A7nQ14qxBNrg==
+X-Gm-Gg: ASbGncsXi87HNA84vwD2/Occ2h/0xEvomsueuxt+p5ZqF3HsMnZ6n4QSu+QmWbNiTXY
+	b4HTqaP4zygrp6ZvVOG0+ZgZwaKpBXVzKykuk8X0BHGzs9XD7RantL8GGz0Se+sCGpeS2fNVG7x
+	6v2DTQq1TWZu1l4TkBjKZ9Ycc7SJ/U6wlQY91dsKRJmA==
+X-Google-Smtp-Source: AGHT+IGNp28dBKAquueQpWzljuOmRhVxV4H2kbqPLploPx3V9qD87V1Vlv08FVxL/omi8l13GlUFlqMZNTkVFAD7j6c=
+X-Received: by 2002:a05:651c:19a8:b0:32a:77a3:877f with SMTP id
+ 38308e7fff4ca-32f39a9f5d2mr9224901fa.2.1751982172536; Tue, 08 Jul 2025
+ 06:42:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <6cba5ea3-9e63-2712-4d53-a35fa69c63de@gmail.com>
+In-Reply-To: <6cba5ea3-9e63-2712-4d53-a35fa69c63de@gmail.com>
+From: Alex Gray <alex@openfort.xyz>
+Date: Tue, 8 Jul 2025 15:42:41 +0200
+X-Gm-Features: Ac12FXx3Esu_uMhaDof4GzxetAwI5_XC4bCqIdLt4WCO5VhisAjUFo4z4vV0gJE
+Message-ID: <CANvniTeu9QH4UcVYHAmSXJ6MCnsHRZ3V6sJjcdM7GAg134FuKQ@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IPCfm6HvuI8gR3VhcmRpYW4gaW52aXRhdGlvbiBmb3Igd2FsbGV0IDB4NTYxNWRFQg==?=
+	=?UTF-8?B?N+KApg==?=
+To: =?UTF-8?Q?ZK=E2=80=91Email_Recovery?= <nekotattoosbcn@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000000c1ab606396b2397"
+
+--0000000000000c1ab606396b2397
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Confirm
+
+
+On Tue, Jul 8, 2025 at 3:39=E2=80=AFPM ZK=E2=80=91Email Recovery <nekotatto=
+osbcn@gmail.com>
+wrote:
+
+> Accept guardian request for 0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+>
+> Instructions:
+> 1. Reply to this e=E2=80=91mail with the single word 'Confirm'.
+> 2. The zk.email system will use your reply to generate a private proof
+>    that you own this inbox (via DKIM) without revealing it on=E2=80=91cha=
+in.
+>
+> Guardian EmailAuth address: 0xE52b7BB269F5a8c1838979b118fCA3E26F996862
+> (You don't need to do anything with this address =E2=80=93 it's for refer=
+ence.)
+>
+
+--0000000000000c1ab606396b2397
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+
+
+
+
+
+<blockquote style=3D"margin:0px 0px 0px 15px;font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjus=
+t:none;font-kerning:auto;font-feature-settings:normal;font-stretch:normal;f=
+ont-size:19px;line-height:normal;font-family:&quot;.AppleSystemUIFont&quot;=
+;color:rgb(14,14,14)">Confirm</blockquote></div><br><div class=3D"gmail_quo=
+te gmail_quote_container"><div dir=3D"ltr" class=3D"gmail_attr">On Tue, Jul=
+ 8, 2025 at 3:39=E2=80=AFPM ZK=E2=80=91Email Recovery &lt;<a href=3D"mailto=
+:nekotattoosbcn@gmail.com">nekotattoosbcn@gmail.com</a>&gt; wrote:<br></div=
+><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border=
+-left:1px solid rgb(204,204,204);padding-left:1ex">Accept guardian request =
+for 0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f<br>
+<br>
+Instructions:<br>
+1. Reply to this e=E2=80=91mail with the single word &#39;Confirm&#39;.<br>
+2. The zk.email system will use your reply to generate a private proof<br>
+=C2=A0 =C2=A0that you own this inbox (via DKIM) without revealing it on=E2=
+=80=91chain.<br>
+<br>
+Guardian EmailAuth address: 0xE52b7BB269F5a8c1838979b118fCA3E26F996862<br>
+(You don&#39;t need to do anything with this address =E2=80=93 it&#39;s for=
+ reference.)<br>
+</blockquote></div>
+
+--0000000000000c1ab606396b2397--
